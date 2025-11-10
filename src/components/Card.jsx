@@ -1,10 +1,12 @@
-import { Card, Image, Text, Badge, Button, Group } from "@mantine/core";
+import { Card, Image, Text, Badge, Button, Group, Flex } from "@mantine/core";
 import { useState } from "react";
 import useAppContext from "../hooks/useAppContext";
 import "@mantine/core/styles.css";
+import { useTranslation } from "react-i18next";
 
 function CardEl({ product }) {
     const { cart, setCart } = useAppContext();
+    const { t } = useTranslation();
     const [liked, setLiked] = useState(false);
     const inCart = cart.find((p) => p.id === product.id);
     const handleAddToCart = () => {
@@ -54,9 +56,11 @@ function CardEl({ product }) {
                 </Button>
                 <Image src={product.images[0]} height={160} alt="Norway" />
                 <Badge color="#FF4499">{product.category}</Badge>
-                <Badge color="#F58B00">{product.price} $</Badge>
                 <Badge color="#5CA3FF">
-                    Discount {product.discountPercentage} %
+                    {t("card.disc")} {product.discountPercentage} %
+                </Badge>
+                <Badge color="#F58B00">
+                    {t("card.price")}: {product.price} $
                 </Badge>
             </Card.Section>
 
@@ -83,18 +87,22 @@ function CardEl({ product }) {
                     style={{ color: "#FFD43B" }}
                 ></i>
                 <p style={{ color: "#B4B5BC" }}>
-                    {product.rating} ({product.stock} ta sharh)
+                    {product.rating} ({product.stock} {t("card.comment")})
                 </p>
             </div>
             {!inCart && (
                 <Button
                     onClick={handleAddToCart}
-                    color="blue"
+                    color="#7000FF"
                     fullWidth
                     mt="md"
                     radius="md"
                 >
-                    Buy now
+                    <i
+                        className="fa-solid fa-bag-shopping"
+                        style={{ marginTop: "3px", marginRight: "3px" }}
+                    ></i>
+                    {t("card.buyBtn")}
                 </Button>
             )}
             {inCart && (

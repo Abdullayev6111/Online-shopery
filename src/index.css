@@ -4,6 +4,21 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: poppins-r;
+    src: url(./assets/fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: poppins-m;
+    src: url(./assets/fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: poppins-b;
+    src: url(./assets/fonts/Poppins-Bold.ttf);
+}
+
 .container {
     max-width: 1280px;
     width: 100%;
@@ -17,7 +32,7 @@ header {
 
 .products {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 10px;
 }
 
@@ -46,4 +61,123 @@ header {
     justify-content: center;
     cursor: pointer;
     font-size: 18px;
+}
+
+.product-text {
+    color: black;
+    font-family: poppins-b;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.product-text i {
+    font-size: 18px;
+}
+
+/* Footer start */
+
+footer {
+    display: flex;
+    padding-top: 90px;
+    flex-direction: column;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-top h1 {
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: poppins-m;
+    line-height: 19px;
+}
+
+.footer-top a {
+    color: #8b8e99;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #8b8e99;
+    margin-top: 50px;
+    padding: 10px 0;
+    align-items: center;
+}
+
+.footer-bottom p {
+    font-size: 11px;
+    font-family: poppin-r;
+    font-weight: 400;
+    line-height: 14px;
+    color: #8b8e99;
+}
+
+.footer-agreements {
+    display: flex;
+    gap: 16px;
+}
+
+.footer-agreements a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-family: poppins-m;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+.fa-apple {
+    font-size: 18px;
+}
+
+.fa-google-play {
+    font-size: 17px;
+}
+
+.footer-main-card a {
+    font-size: 13px;
+    font-family: poppins-m;
+    font-weight: 500;
+    color: black;
+}
+
+.footer-main-card h3 {
+    color: black;
+    font-size: 14px;
+    font-family: poppins-m;
+    font-weight: 500;
+    line-height: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-main-card h4 {
+    color: black;
+    font-size: 14px;
+    font-family: poppins-m;
+    font-weight: 500;
+    line-height: 18px;
+    margin-top: 30px;
+}
+
+.messengers {
+    margin-top: 10px;
+}
+
+.messengers a {
+    font-size: 36px;
 }

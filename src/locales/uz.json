@@ -1,0 +1,49 @@
+{
+    "header": {
+        "location": "Toshkent",
+        "deliveryPoints": "Topshirish punktlari",
+        "becomeSeller": "Sotuvchi bo'lish",
+        "openPickupPoint": "Topshirish punktini ochish",
+        "faq": "Savol-javob",
+        "myOrders": "Buyurtmalarim",
+        "catalog": "Katalog",
+        "searchPlaceholder": "Mahsulotlar va turkumlar izlash",
+        "login": "Kirish",
+        "favorites": "Saralangan",
+        "cart": "Savat",
+        "weeklyProducts": "Hafta tovarlari",
+        "winterCollection": "Qishki kolleksiya",
+        "hobbyAndArt": "Xobbi va ijod",
+        "smartphones": "Smartfonlar",
+        "tourism": "Turizm, baliq ovi va ovchilik",
+        "electronics": "Elektronika",
+        "homeAppliances": "Maishiy texnika",
+        "clothing": "Kiyim",
+        "shoes": "Poyabzallar",
+        "accessories": "Aksessuarlar",
+        "more": "Yana"
+    },
+    "card": {
+        "disc": "Chegirma",
+        "price": "Narxi",
+        "buyBtn": "Sotib olish",
+        "comment": "sharh"
+    },
+    "footer": {
+        "aboutUs": "Biz haqimizda",
+        "deliveryPoint": "Topshirish punktlari",
+        "vacancies": "Vakansiyalar",
+        "forUsers": "Foydalanuvchilarga",
+        "contact": "Biz bilan bog'lanish",
+        "faq": "Savol-Javob",
+        "entrepreneur": "Tadbirkorlarga",
+        "sellInUzum": "Uzumda soting",
+        "loginSellersAcount": "Sotuvchi kabinetiga kirish",
+        "assignmentBox": "Topshirish punkitini ochish",
+        "download": "Ilovani yuklab olsh",
+        "socialMedia": "Uzum ijtimoiy tarmoqlarda",
+        "security": "Maxfiylik kelishuvi",
+        "userSecurity": "Foydalanuvchi kelishuvi",
+        "rightsReserved": "«2025© XK MCHJ «UZUM MARKET». STIR 309376127. Barcha huquqlar himoyalangan»"
+    }
+}

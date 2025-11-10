@@ -1,0 +1,49 @@
+{
+    "header": {
+        "location": "Ташкент",
+        "deliveryPoints": "Пункты доставки",
+        "becomeSeller": "Стать продавцом",
+        "openPickupPoint": "Открыть пункт доставки",
+        "faq": "Вопрос и ответ",
+        "myOrders": "Мои заказы",
+        "catalog": "Каталог",
+        "searchPlaceholder": "Поиск товаров и категорий",
+        "login": "Входить",
+        "favorites": "Избранное",
+        "cart": "Корзина",
+        "weeklyProducts": "Товары недели",
+        "winterCollection": "Зимняя коллекция",
+        "hobbyAndArt": "Искусство",
+        "smartphones": "Смартфоны",
+        "tourism": "Рыбалка и охота",
+        "electronics": "Электроника",
+        "homeAppliances": "Бытовая техника",
+        "clothing": "Одежда",
+        "shoes": "Обувь",
+        "accessories": "Аксессуары",
+        "more": "Еще"
+    },
+    "card": {
+        "disc": "Скидка",
+        "price": "Цена",
+        "buyBtn": "Купить",
+        "comment": "комментарий"
+    },
+    "footer": {
+        "aboutUs": "О нас",
+        "deliveryPoint": "Пункты доставки",
+        "vacancies": "Вакансии",
+        "forUsers": "Пользователям",
+        "contact": "Связаться с нами",
+        "faq": "Вопрос и ответ",
+        "entrepreneur": "Предпринимателям",
+        "sellInUzum": "Продать на Uzum",
+        "loginSellersAcount": "Войти в аккаунт продавца",
+        "assignmentBox": "Откройте поле с заданиями",
+        "download": "Загрузите приложение",
+        "socialMedia": "Uzum в социальных сетях",
+        "security": "Соглашение о конфиденциальности",
+        "userSecurity": "Пользовательское соглашение",
+        "rightsReserved": "«2025© ХК МХЖ «УЗУМАРТЕ». СТИР 309376127. Все права защищены»"
+    }
+}

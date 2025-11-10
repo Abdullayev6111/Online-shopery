@@ -1,0 +1,49 @@
+{
+    "header": {
+        "location": "Tashkent",
+        "deliveryPoints": "Delivery points",
+        "becomeSeller": "Become a seller",
+        "openPickupPoint": "Open a pickup point",
+        "faq": "FAQ",
+        "myOrders": "My orders",
+        "catalog": "Catalog",
+        "searchPlaceholder": "Search for products and categories",
+        "login": "Login",
+        "favorites": "Favorites",
+        "cart": "Cart",
+        "weeklyProducts": "Weekly products",
+        "winterCollection": "Winter collection",
+        "hobbyAndArt": "Hobby and art",
+        "smartphones": "Smartphones",
+        "tourism": "Fishing and hunting",
+        "electronics": "Electronics",
+        "homeAppliances": "Home appliances",
+        "clothing": "Clothing",
+        "shoes": "Shoes",
+        "accessories": "Accessories",
+        "more": "More"
+    },
+    "card": {
+        "disc": "Discount",
+        "price": "Price",
+        "buyBtn": "Buy now",
+        "comment": "comment"
+    },
+    "footer": {
+        "aboutUs": "About Us",
+        "deliveryPoint": "Delivery points",
+        "vacancies": "Vacancies",
+        "forUsers": "To users",
+        "contact": "Contact us",
+        "faq": "Question-Answer",
+        "entrepreneur": "To entrepreneurs",
+        "sellInUzum": "Sell ​​on Uzum",
+        "loginSellersAcount": "Login to the seller's account",
+        "assignmentBox": "Open the assignment box",
+        "download": "Download the app",
+        "socialMedia": "Uzum on social media",
+        "security": "Confidentiality Agreement",
+        "userSecurity": "User Agreement",
+        "rightsReserved": "«2025© ХК МХЖ «УЗУМАРТЕ». STIR 309376127. All rights reserved»"
+    }
+}
