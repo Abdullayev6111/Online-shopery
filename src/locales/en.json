@@ -29,6 +29,18 @@
         "buyBtn": "Buy now",
         "comment": "comment"
     },
+    "cart": {
+        "title": "Your shopping cart",
+        "product": "product",
+        "delivery": "Delivery",
+        "deleteBtn": "Delete",
+        "price": "Price",
+        "order": "Your order",
+        "products": "Products",
+        "total": "Total",
+        "savings": "Your savings",
+        "formalization": "To formalization"
+    },
     "footer": {
         "aboutUs": "About Us",
         "deliveryPoint": "Delivery points",

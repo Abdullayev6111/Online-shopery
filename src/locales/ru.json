@@ -29,6 +29,18 @@
         "buyBtn": "Купить",
         "comment": "комментарий"
     },
+    "cart": {
+        "title": "Ваша корзина покупок",
+        "product": "продукт",
+        "delivery": "Доставка",
+        "deleteBtn": "Удалить",
+        "price": "Цена",
+        "order": "Ваш заказ",
+        "products": "Продукты",
+        "total": "Общий",
+        "savings": "Ваша экономия",
+        "formalization": "К формализации"
+    },
     "footer": {
         "aboutUs": "О нас",
         "deliveryPoint": "Пункты доставки",

@@ -1,11 +1,13 @@
 import { useTranslation } from "react-i18next";
-import Select from "react-select";
 import "./Header.css";
 import LanguageSelect from "./LanguageSelect";
+import { NavLink } from "react-router-dom";
+import { Badge } from "@mantine/core";
+import useAppContext from "../hooks/useAppContext";
 
 function Header() {
     const { t } = useTranslation();
-
+    const { cart } = useAppContext();
     return (
         <header>
             <div className="top-bar">
@@ -33,13 +35,17 @@ function Header() {
             </div>
 
             <div className="main-header container">
-                <div className="logo">
+                <NavLink
+                    to="/"
+                    style={{ textDecoration: "none" }}
+                    className="logo"
+                >
                     <img
                         src="https://uzum.com/images/services/market.png"
                         alt="logo"
                     />
                     <h1>uzum market</h1>
-                </div>
+                </NavLink>
 
                 <div className="search">
                     <button className="catalog-btn">
@@ -69,12 +75,48 @@ function Header() {
                         </span>
                         <span>{t("header.favorites")}</span>
                     </div>
-                    <div className="link">
-                        <span className="icon">
-                            <i className="fa-solid fa-shopping-bag"></i>
+                    <NavLink
+                        to="/cart"
+                        style={{
+                            textDecoration: "none",
+                            color: "black",
+                            position: "relative",
+                            display: "flex",
+                            gap: "10px",
+                            flexDirection: "row",
+                            alignItems: "center",
+                            fontSize: "14px",
+                        }}
+                    >
+                        <div style={{ position: "relative" }}>
+                            <i
+                                className="fa-solid fa-bag-shopping"
+                                style={{ fontSize: "22px", color: "black" }}
+                            ></i>
+                            <span
+                                style={{
+                                    position: "absolute",
+                                    top: "-5px",
+                                    right: "-10px",
+                                    backgroundColor: "#7000FF",
+                                    color: "white",
+                                    borderRadius: "50%",
+                                    width: "20px",
+                                    height: "20px",
+                                    display: "flex",
+                                    justifyContent: "center",
+                                    alignItems: "center",
+                                    fontSize: "12px",
+                                    fontWeight: "500",
+                                }}
+                            >
+                                {cart.length}
+                            </span>
+                        </div>
+                        <span style={{ marginTop: "5px" }}>
+                            {t("header.cart")}
                         </span>
-                        <span>{t("header.cart")}</span>
-                    </div>
+                    </NavLink>
                 </div>
             </div>
 

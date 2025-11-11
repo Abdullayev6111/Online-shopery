@@ -10,8 +10,31 @@ function CardEl({ product }) {
     const [liked, setLiked] = useState(false);
     const inCart = cart.find((p) => p.id === product.id);
     const handleAddToCart = () => {
-        setCart([...cart, { ...product, count: 1 }]);
+        if (inCart) {
+            const newCartData = cart.map((p) => {
+                if (p.id === product.id) {
+                    return { ...p, count: p.count + 1 };
+                } else return p;
+            });
+            setCart(newCartData);
+        } else {
+            setCart([...cart, { ...product, count: 1 }]);
+        }
     };
+    const handleDec = () => {
+        if (inCart.count === 1) {
+            const newData = cart.filter((p) => p.id !== product.id);
+            setCart(newData);
+        } else {
+            const newCartData = cart.map((p) => {
+                if (p.id === product.id) {
+                    return { ...p, count: p.count - 1 };
+                } else return p;
+            });
+            setCart(newCartData);
+        }
+    };
+
     return (
         <Card
             shadow="sm"
@@ -107,9 +130,9 @@ function CardEl({ product }) {
             )}
             {inCart && (
                 <div className="inCart-btn">
-                    <button>-</button>
-                    <p>1</p>
-                    <button>+</button>
+                    <button onClick={handleDec}>-</button>
+                    <p>{inCart.count}</p>
+                    <button onClick={handleAddToCart}>+</button>
                 </div>
             )}
         </Card>

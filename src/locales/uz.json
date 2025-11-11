@@ -29,6 +29,18 @@
         "buyBtn": "Sotib olish",
         "comment": "sharh"
     },
+    "cart": {
+        "title": "Savatingiz",
+        "product": "mahsulot",
+        "delivery": "Yetkazib berish",
+        "deleteBtn": "O'chirish",
+        "price": "Narxi",
+        "order": "Buyurtmangiz",
+        "products": "Mahsulotlar",
+        "total": "Jami",
+        "savings": "Tejovingiz",
+        "formalization": "Rasmiylashtirishga o'tish"
+    },
     "footer": {
         "aboutUs": "Biz haqimizda",
         "deliveryPoint": "Topshirish punktlari",
