@@ -3,12 +3,15 @@ import { useState } from "react";
 import useAppContext from "../hooks/useAppContext";
 import "@mantine/core/styles.css";
 import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
 
 function CardEl({ product }) {
-    const { cart, setCart } = useAppContext();
     const { t } = useTranslation();
+    const navigate = useNavigate();
+    const { cart, setCart } = useAppContext();
     const [liked, setLiked] = useState(false);
     const inCart = cart.find((p) => p.id === product.id);
+
     const handleAddToCart = () => {
         if (inCart) {
             const newCartData = cart.map((p) => {
@@ -21,6 +24,7 @@ function CardEl({ product }) {
             setCart([...cart, { ...product, count: 1 }]);
         }
     };
+
     const handleDec = () => {
         if (inCart.count === 1) {
             const newData = cart.filter((p) => p.id !== product.id);
@@ -34,6 +38,10 @@ function CardEl({ product }) {
             setCart(newCartData);
         }
     };
+
+    function handleClick() {
+        navigate(`/${product.id}`);
+    }
 
     return (
         <Card
@@ -77,7 +85,12 @@ function CardEl({ product }) {
                         }}
                     ></i>
                 </Button>
-                <Image src={product.images[0]} height={160} alt="Norway" />
+                <Image
+                    src={product.images[0]}
+                    height={160}
+                    alt="Norway"
+                    onClick={handleClick}
+                />
                 <Badge color="#FF4499">{product.category}</Badge>
                 <Badge color="#5CA3FF">
                     {t("card.disc")} {product.discountPercentage} %

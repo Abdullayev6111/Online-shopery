@@ -29,6 +29,11 @@
         "buyBtn": "Sotib olish",
         "comment": "sharh"
     },
+    "cardDetail": {
+        "comment": "sharh",
+        "brand": "Brend",
+        "reviewerEmail": "Sharh yozuvchining emaili"
+    },
     "cart": {
         "title": "Savatingiz",
         "product": "mahsulot",

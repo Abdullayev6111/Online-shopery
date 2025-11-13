@@ -5,6 +5,7 @@ import { MantineProvider } from "@mantine/core";
 import Home from "./pages/Home";
 import Layout from "./components/Layout";
 import Cart from "./pages/Cart";
+import CardDetail from "./components/CardDetail";
 
 const App = () => {
     const [cart, setCart] = useState([]);
@@ -25,6 +26,7 @@ const App = () => {
                 <Routes>
                     <Route element={<Layout />}>
                         <Route path="/" element={<Home />} />
+                        <Route path="/:id" element={<CardDetail />} />
                         <Route path="/cart" element={<Cart />} />
                     </Route>
                 </Routes>

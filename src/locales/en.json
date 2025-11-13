@@ -29,6 +29,11 @@
         "buyBtn": "Buy now",
         "comment": "comment"
     },
+    "cardDetail": {
+        "comment": "comment",
+        "brand": "Brand",
+        "reviewerEmail": "Sharh yozuvchining emaili"
+    },
     "cart": {
         "title": "Your shopping cart",
         "product": "product",
